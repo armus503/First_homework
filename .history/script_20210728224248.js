@@ -1,7 +1,7 @@
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
-    count: numberOfFilms,
+    //count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
@@ -9,6 +9,10 @@ const personalMovieDB = {
 };
 
 let i = 0;
+
+do {
+    numberOfFilms();
+}
 
 while (i < 2) {
     const a = prompt('Один из последних просмотренных фильмов?', ''),
