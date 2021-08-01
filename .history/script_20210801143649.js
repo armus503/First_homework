@@ -16,23 +16,13 @@ const trees = {
         birchTree: 'white',
         appleTree: 'braun',
         ashTree: 'green'
-    },
-    makeTest: function() { //создаем свой метод для вывода сообщения в консоль
-        console.log('Test');
     }
 };
-
-const { appleTree, ashTree } = trees.deciduous; //деструктуризация объекта путем определения переменных, названия переменных соответствуют названиям ключей объекта
-console.log(appleTree); //выводим в консоль значение свойства(ключа) объекта
-
-trees.makeTest(); //обязательно нужно вызвать метод так же как и функции
-
 console.log(Object.keys(trees).length); //выводит число свойств(ключей) объекта
 console.log(Object.keys(trees.deciduous)); //выводит ключи объекта в качестве массива
 
 console.log(Object.keys(options).length);
 
-console.log(options['colors']['border']); //так же можно вызвать свойство через массив
 //console.log(options.name);
 
 //delete options.name;
