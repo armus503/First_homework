@@ -25,13 +25,5 @@
 //console.log(arr);
 
 const str = prompt("", "");
-const products = str.split(", "); // метод сплит превращает строку в массив
-console.log(products.join("; "));
-
-const arr = [2, 15, 45, 1, 7];
-arr.sort(compareNum); // метод быстрой сортировки, подразумевает сортировку строк, но в данном случае при помощи колбэк функции можно отсортировать числовой массив, если не применить колбэк Ф, то числа будут отсортированы как строки
-console.log(arr);
-
-function compareNum(a, b) { // callback функция
-    return a - b;
-}
+const products = str.split(", "); // 
+console.log(products);
