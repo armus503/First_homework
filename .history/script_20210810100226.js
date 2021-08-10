@@ -70,26 +70,3 @@ const video = ['youtube', 'okko', 'rutube'],
     internet = [...video, ...blogs, 'vk', 'facebook']; // оператор spread(оператор разворота) разворачивает структуры(массивы в данном случае) на отдельные элементы
 
 console.log(internet);
-
-function log(a, b, c) { //создаем функцию для вывода в консоль значений аргументов
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
-
-const num = [2, 5, 8]; // создаем переменную, которая является массивом
-
-log(...num); // для передачи элементов из массива используем оператор Spread!
-
-const array = ["a", "b"];
-const newAarray = [...array]; //создана поверхностная копия массива array
-console.log(newAarray);
-
-const q = {
-    one: 1,
-    two: 2
-};
-
-const newObj = {...q }; // создали поверхностную копию объекта q при помощи оператора Spread
-
-console.log(newObj);
