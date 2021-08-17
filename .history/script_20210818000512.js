@@ -29,4 +29,4 @@ Object.setPrototypeOf(john, soldier); // современный метод дл�
 console.log(john.armor); // оба свойства
 john.sayHello(); // наследуются от прототипа
 
-Object.getPrototypeOf(); // метод возвращает прототип переданного объекта
+Object.getPrototypeOf(soldier);
