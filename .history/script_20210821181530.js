@@ -52,7 +52,7 @@ const personalMovieDB = {
     },
     writeYourGenres: function() {
         for (let i = 1; i <= 3; i++) {
-            let genre = prompt(`Ваш любимый жанр под номером ${i}`).toLowerCase(); // все введенные пользователем данные будут приведены к нижнему регистру
+            let genre = prompt(`Ваш любимый жанр под номером ${i}`);
 
             if (genre === '' || genre == null) {
                 console.log('Вы ввели некорректные данные');

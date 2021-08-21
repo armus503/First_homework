@@ -52,18 +52,15 @@ const personalMovieDB = {
     },
     writeYourGenres: function() {
         for (let i = 1; i <= 3; i++) {
-            let genre = prompt(`Ваш любимый жанр под номером ${i}`).toLowerCase(); // все введенные пользователем данные будут приведены к нижнему регистру
+            let genres = prompt(`Ваш любимый жанр под номером ${i}`);
 
-            if (genre === '' || genre == null) {
+            if (genres === '' || genres == null) {
                 console.log('Вы ввели некорректные данные');
                 i--;
             } else {
-                personalMovieDB.genres[i - 1] = genre;
+                personalMovieDB.genres[i - 1] = genres;
             }
         }
 
-        personalMovieDB.genres.forEach((item, i) => {
-            console.log(`Любимый жанр ${i + 1} - это ${item}`);
-        });
     }
 };
