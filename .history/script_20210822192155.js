@@ -31,23 +31,4 @@ let answ = +prompt('Hello', '');
 
 //Перевод в булевое значение(to boolean):
 
-//0, '', null, undefined, NaN; - это превращается в false, все остальное в JS true!
-
-//1) нативный способ:
-let switcher = null; //изначально false
-
-if (switcher) {
-    console.log('Working...');
-}
-
-switcher = 1; // теперь true
-
-if (switcher) {
-    console.log('Working...');
-}
-
-//2)
-console.log(typeof(Boolean('7'))); //=> boolean
-
-//3)
-console.log(typeof(!!'7777')); //=> boolean
+//1)

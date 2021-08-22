@@ -47,7 +47,3 @@ if (switcher) {
 }
 
 //2)
-console.log(typeof(Boolean('7'))); //=> boolean
-
-//3)
-console.log(typeof(!!'7777')); //=> boolean

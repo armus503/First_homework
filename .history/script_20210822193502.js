@@ -33,7 +33,6 @@ let answ = +prompt('Hello', '');
 
 //0, '', null, undefined, NaN; - это превращается в false, все остальное в JS true!
 
-//1) нативный способ:
 let switcher = null; //изначально false
 
 if (switcher) {
@@ -45,9 +44,3 @@ switcher = 1; // теперь true
 if (switcher) {
     console.log('Working...');
 }
-
-//2)
-console.log(typeof(Boolean('7'))); //=> boolean
-
-//3)
-console.log(typeof(!!'7777')); //=> boolean
