@@ -19,8 +19,3 @@ btns[1].style.borderRadius = '100%'; //меняем радиус второй к
 
 box.style.cssText = 'background-color: purple; width: 500px'; //стили записываются уже как в CSS
 //так же можно использовать переменные, если свойства меняются динамически
-
-//Для произведения одних и тех же действий над несколькими элементами используем циклы for, for...in, forEach(только вместе с querySelectorAll):
-for (let i = 0; i < hearts.length; i++) {
-    hearts[i].style.backgroundColor = 'orange';
-}
