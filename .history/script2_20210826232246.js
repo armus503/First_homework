@@ -92,10 +92,3 @@ div.insertAdjacentHTML('afterend', '<h2>You!</h2>'); //вставить You! п�
 //afterbegin - в начало элем div
 //beforebegin - перед элем div
 //beforeend - в конец элем div
-
-/*!!!!!!!! Вместо*/
-//const hearts = document.querySelectorAll('.heart');
-//можно использовать
-//const hearts = wrapper.querySelectorAll('.heart'); //если элементы heart находятся
-//внутри wreapper
-/*!!!!!!!!!*/

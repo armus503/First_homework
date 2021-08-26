@@ -75,27 +75,4 @@ document.body.append(div); //вставить в конец тега body эле
 //6)метод replaceWith
 //hearts[0].replaceWith(circles[0]); //заменить первый элем из hearts на первый элем из circles
 
-//wrapper.replaceChild(circles[0], hearts[0]); //устаревший(заменить на первый элем circles первый элем heart)
-
-//Добавление HTML элементов
-
-//1)
-div.innerHTML = '<h1>Hello!</h1>'; //добавить HTML-элемент с текстом или просто текст в элемент div
-
-//2)
-//div.textContent = 'Hello'; //в данном методе можно вставить только текст
-//именно он применяется, если какие-то данные требуется ввести пользователю
-//в целях безоапсности - только текст без тегов!!!!!
-
-//3)метод insertAdjacentHTML
-div.insertAdjacentHTML('afterend', '<h2>You!</h2>'); //вставить You! после элем div
-//afterbegin - в начало элем div
-//beforebegin - перед элем div
-//beforeend - в конец элем div
-
-/*!!!!!!!! Вместо*/
-//const hearts = document.querySelectorAll('.heart');
-//можно использовать
-//const hearts = wrapper.querySelectorAll('.heart'); //если элементы heart находятся
-//внутри wreapper
-/*!!!!!!!!!*/
+wrapper.replaceChild(circles[0], hearts[0]);

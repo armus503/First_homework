@@ -52,50 +52,9 @@ document.body.append(div); //вставить в конец тега body эле
 //document.querySelector('.wrapper').append(div); //если класс wrapper используетя только
 //один раз на странице, то можно так(вставить в конец блока с классом wrapper элемент div)
 
-//wrapper.append(div); //если класс wrapper используется на странице несколько раз
+wrapper.append(div); //если класс wrapper используется на странице несколько раз
 //создаем переменную wrapper и уже добавляем элемент div в конец блока с классом wrapper так
-//wrapper.appendChild(div);//устаревший метод(добавляет div в конец wrapper)
 
 //2)свойство prepend(в начало блока)
-//wrapper.prepend(div); //добавить элемент div в начало блока с классом wrapper
 
-//3)метод before(перед)
-//hearts[0].before(div); //добавить элем div перед первым элем hearts
-
-//4)метод after(перед)
-//hearts[0].after(div); //добавить элем div после первого элем hearts
-
-//wrapper.insertBefore(div, hearts[1]);//устаревший(добавить div перед вторым элементом hearts)
-
-//5)метод remove
-//circles[0].remove(); //удалить первый элемент из circles
-
-//wrapper.removeChild(hearts[1]);//устаревший(удалить второй элемент hearts)
-
-//6)метод replaceWith
-//hearts[0].replaceWith(circles[0]); //заменить первый элем из hearts на первый элем из circles
-
-//wrapper.replaceChild(circles[0], hearts[0]); //устаревший(заменить на первый элем circles первый элем heart)
-
-//Добавление HTML элементов
-
-//1)
-div.innerHTML = '<h1>Hello!</h1>'; //добавить HTML-элемент с текстом или просто текст в элемент div
-
-//2)
-//div.textContent = 'Hello'; //в данном методе можно вставить только текст
-//именно он применяется, если какие-то данные требуется ввести пользователю
-//в целях безоапсности - только текст без тегов!!!!!
-
-//3)метод insertAdjacentHTML
-div.insertAdjacentHTML('afterend', '<h2>You!</h2>'); //вставить You! после элем div
-//afterbegin - в начало элем div
-//beforebegin - перед элем div
-//beforeend - в конец элем div
-
-/*!!!!!!!! Вместо*/
-//const hearts = document.querySelectorAll('.heart');
-//можно использовать
-//const hearts = wrapper.querySelectorAll('.heart'); //если элементы heart находятся
-//внутри wreapper
-/*!!!!!!!!!*/
+wrapper.prepend.append(div); //добавить элемент div в начало блока с классом wrapper

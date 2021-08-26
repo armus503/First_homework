@@ -88,14 +88,4 @@ div.innerHTML = '<h1>Hello!</h1>'; //добавить HTML-элемент с т�
 //в целях безоапсности - только текст без тегов!!!!!
 
 //3)метод insertAdjacentHTML
-div.insertAdjacentHTML('afterend', '<h2>You!</h2>'); //вставить You! после элем div
-//afterbegin - в начало элем div
-//beforebegin - перед элем div
-//beforeend - в конец элем div
-
-/*!!!!!!!! Вместо*/
-//const hearts = document.querySelectorAll('.heart');
-//можно использовать
-//const hearts = wrapper.querySelectorAll('.heart'); //если элементы heart находятся
-//внутри wreapper
-/*!!!!!!!!!*/
+div.insertAdjacentHTML('beforebegin', '<h2>You!</h2>');
